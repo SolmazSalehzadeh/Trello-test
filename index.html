@@ -1,0 +1,317 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/fa.css" type="text/css">
+    <title>Trello</title> 
+    <link rel="shortcut icon" href="img/apple-touch-icon-152x152-precomposed.0307bc39ec6c9ff499c8.png" />
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="top-header">
+
+            <div class="col-5 d-flex">
+
+                <div class="dropdown">
+                    <button class="btn text-white board-button mx-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-qrcode icon"></i>
+                    </button>
+                    <ul class="dropdown-menu board-list" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list text-center">More from Atlassian</P>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list">Switch to<a href="#" class="creat-link">Attlassian Start<i class="fas fa-file-export px-1"></i></a> </P>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn text-white board-button mx-1 d-none-498px" type="button">
+                    <a href="#"><i class="fas fa-home text-white "></i></a>
+                </button>
+
+                <div class="dropdown">
+                    <button class="btn text-white board-button mx-1 d-none-498px" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-align-center px-1"></i>Boards
+                    </button>
+                    <ul class="dropdown-menu board-list" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 dropdown-item">
+                            <input placeholder="Find boards by name..." class="w-100 px-2 py-2 rounded border input-invitation">
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <p class="text-secondary header-board-list"><i class="far fa-star px-1"></i>STARRED BOARDS</p>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <div class="text-secondary div-wordBreak sub-board-list">Star your most important boards to keep them right at your fingertps</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn mx-1 board-button search-button">
+                    <input class="search-input text-white" placeholder="jump to..."><i class="fas fa-search text-white"></i>
+                </button>
+
+            </div>
+                    
+            <div class="logo col-2 text-center"><img src="img/header-logo-2x.01ef898811a879595cea.png" alt="trello-logo">
+            </div>
+
+            <div class="col-5 d-flex justify-content-end">
+
+                <div class="dropdown">
+                    <button class="btn text-white board-button mx-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-plus icon"></i> 
+                    </button>
+                    <ul class="dropdown-menu board-list test-70" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list text-center">Change Visibility</P>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2 dropdown-item">
+                            <a href=#>
+                                <P class="header-board-list"><i class="fas fa-lock text-danger"></i>Private </P>
+                                <p class="sub-board-list">only board members can see and edit this board.</p>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <a href=#>
+                                <P class="header-board-list"><i class="fas fa-user-alt"></i>Team </P>
+                                <p class="sub-board-list">All members of the Treloo workspace team can see and edit this board.</p>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list text-secondary"><i class="fas fa-school text-secondary"></i>Organization </P>
+                            <p class="sub-board-list text-secondary">All members of the organization can see this board.<br>The board must be added to an enterprise team enable this.</p>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <a href=#>
+                                <P class="header-board-list"><i class="fas fa-globe text-success"></i>Public </P>
+                                <p class="sub-board-list">Anyone on the internet (including Google) can see this board.</p>
+                                <p class="sub-board-list">Only board members can edit.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn text-white board-button mx-1" type="button">
+                    <i class="fa fa-exclamation-circle "></i> 
+                </button>
+
+                <button class="btn text-white board-button mx-1" type="button" id="clockDisplay">
+                </button>
+
+            </div>
+                               
+        </div>   
+        
+        <div class="buttom-header clearfix">
+
+            <div class="d-flex float-start">
+
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle board-button mx-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bars"></i> Board
+                    </button>
+                    <ul class="dropdown-menu board-list" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 bg-light">
+                            <a class="dropdown-item" href="#">
+                                <P class="header-board-list"><i class="fa fa-bars"></i> Board</P>
+                                <p class="sub-board-list">Organize cards in lists on a board.</p>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2">
+                            <a class="dropdown-item" href="#">
+                                <P class="header-board-list"><i class="far fa-calendar-alt"></i> Calendar</P>
+                                <p class="sub-board-list">See cards with due dates in a monthly or weekly format.</p>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2">
+                            <a class="dropdown-item" href="#">
+                                <P class="header-board-list"><i class="fas fa-map-marker-alt "></i> Map</P>
+                                <p class="sub-board-list">Visualize card locations on an interactive map.</p>
+                            </a>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2">
+                            <a class="dropdown-item" href="#">
+                                <p class="sub-board-list text-center">Cive us feedback!</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn text-white board-button mx-1 subject">project name</button>
+
+                <button class="btn text-white board-button mx-1 favorite">
+                    <i class="far fa-star text-white favoriteChild"></i>
+                </button>
+
+                <span class="text-secondary px-1 text-light devider">|</span>
+
+                <div class="dropdown"> 
+                    <button class="btn text-white board-button mx-1 d-none-498px" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Trello workspace 
+                        <span class="rounded-pill free-button devider">free</span>
+                    </button>
+                    <ul class="dropdown-menu board-list" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="sub-board-list text-center">Trello workspace</P>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2">
+                            <a class="dropdown-item" href="#">
+                                <P class="sub-board-list">Change Team...</P>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2">
+                            <a class="dropdown-item" href="#">
+                                <P class="sub-board-list">View Team Page</P>
+                            </a>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2">
+                            <a class="dropdown-item" href="#">
+                                <p class="sub-board-list">Try Business Class for 14 days</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="text-secondary px-1 text-light devider">|</span>
+
+                <div class="dropdown">
+                    <button class="btn text-white board-button mx-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-alt"></i> Team Visible
+                    </button>
+                    <ul class="dropdown-menu board-list teamVisisble-ul" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list text-center">Change Visibility</P>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2 dropdown-item">
+                            <a href=#>
+                                <P class="header-board-list"><i class="fas fa-lock text-danger"></i>Private </P>
+                                <p class="sub-board-list">only board members can see and edit this board.</p>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <a href=#>
+                                <P class="header-board-list"><i class="fas fa-user-alt"></i>Team </P>
+                                <p class="sub-board-list">All members of the Treloo workspace team can see and edit this board.</p>
+                            </a>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list text-secondary"><i class="fas fa-school text-secondary"></i>Organization </P>
+                            <p class="sub-board-list text-secondary">All members of the organization can see this board.<br>The board must be added to an enterprise team enable this.</p>
+                        </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <a href=#>
+                                <P class="header-board-list"><i class="fas fa-globe text-success"></i>Public </P>
+                                <p class="sub-board-list">Anyone on the internet (including Google) can see this board.</p>
+                                <p class="sub-board-list">Only board members can edit.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="text-secondary px-1 text-light devider">|</span>
+
+                <button class="btn rounded-circle bg-info px-2">ss</button>
+
+                <div class="dropdown">
+                    <button class="btn text-white board-button mx-1 d-none-498px" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Invite
+                    </button>
+                    <ul class="dropdown-menu board-list invite-ul" aria-labelledby="dropdownMenuButton">
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list text-center">Invite To Board</P>
+                        </li>
+                        <hr class="mx-3">
+                        <li class="px-2 py-2 dropdown-item">
+                            <input type="text" placeholder="Email address" class="input-input w-100 px-2 py-2 rounded border" oninput="emailValidation()">
+                            </li>
+                        <li class="px-2 py-2 dropdown-item">
+                            <P class="header-board-list"><i class="fas fa-user-alt"></i>Invite with Link<a href="#" class="creat-link">creat link</a> </P>
+                            <p class="sub-board-list">Anyone with link can join as board member</p>
+                        </li>
+                        <button class="px-2 py-2 bg-light dropdown-item button-send-invitation-block btn text-center button-invitation">
+                            Send Invitation
+                        </button>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="d-flex float-end">
+                <button class="btn text-white board-button mx-1 favorite d-none-498px">
+                    <i class="fas fa-concierge-bell"></i>Butler
+                </button>
+
+                <button class="btn text-white board-button mx-1 favorite " onclick="openNav()">... Show Menu
+                </button>
+                <div class="sidePanel clearfix" id="mySidepanel">
+                    <p class="slidePanel-header"> Menu</p>
+                    <a  href="#" class="slidePanel-closeBTN float-end d-none" onclick="closeNav()" >&times;</a>
+                    <hr class="mx-1 my-3">
+                    <ul>
+                        <li>
+                            <a href="#" class="clearfix">
+                                <p class="text-dark">
+                                    <img class="slidePanel-icon" src="img/pinned-tab-icon.225c8d1cf8bbf74add43 (1)-black.svg">About This Board    
+                                </p>
+                                <p class="slidePanel-sub-discription">Add a description to your board</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <input type="color" id="color-picker" name="head" value="#0079bf">
+                                <p class="text-dark d-inline">Change Background</p>
+                            </a>
+                        </li>
+                    </ul>   
+                </div>
+
+            </div>
+               
+        </div>
+
+    </header>
+    
+    <div class="d-flex container-section clearfix ">  
+            <div id="myNav" class="overlay d-none">
+                <div class="overlay-input-container">
+                    <input class="add-list-input rounded my-1 mx-1 float-start revise-input" placeholder="Enter a list name..." type="text"/> 
+                    <button class="btn edit-card-BTN">save</button>
+                </div>
+                 <a  href="#" class="close text-info" >&times;</a>
+                     <ul class="ul-overally">
+                         <li><a href="#"><i class="fa fa-credit-card text-white"><span class="px-2">Open Card</span></i></a></li>
+                         <li><a href="#"><i class="far fa-edit text-white"><span class="px-2">Edit Labels</span></i></a></li>
+                         <li><a href="#"><i class="fas fa-user-graduate text-white"><span class="px-2">Change Members</span></i></a></li>
+                         <li><a href="#"><i class="far fa-credit-card text-white"><span class="px-2">Change Cover</span></i></a></li>
+                         <li><a href="#"><i class="fas fa-arrow-right text-white"><span class="px-2">Move</span></i></a></li>
+                         <li><a href="#"><i class="far fa-credit-card text-white"><span class="px-2">Copy</span></i></a></li>
+                         <li><a href="#"><i class="far fa-clock text-white"><span class="px-2">Change Due Date</span></i></a></li>
+                         <li><a href="#"><i class="fas fa-tags text-white"><span class="px-2">Archive</span></i></a></li>
+         
+                     </ul>
+                     
+                 
+             </div> 
+        
+        
+       
+    </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

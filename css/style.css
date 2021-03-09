@@ -1,0 +1,569 @@
+@font-face {
+    font-family: my-font;
+    src: url("fonts/opensans{@fontbartar}/OpenSans-Regular.ttf") format("ttf"),
+     url("fonts/B_NAZANIN/B-NAZANIN.TTF") format("ttf")
+  }
+
+body{
+    background-color: #0079bf;
+    height: 100%;
+    width: 100%;
+    font-family: my-font!important;
+}
+
+*{
+    margin: 0px!important;
+    border:0px!important;
+    padding: 0px!important;
+    box-sizing: border-box!important;
+}
+
+a{
+    color: #748095;
+    text-decoration: none;
+}
+
+i{
+    font-size: 13px;
+    padding: 0px 5px!important;
+}
+
+li{
+    list-style-type:none;
+}
+/*********************************************scroll********************/
+/* width */
+.overflow-auto::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .overflow-auto::-webkit-scrollbar-track {
+   background-color:#d3d3d39e;
+   margin-right:1px!important;
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .overflow-auto::-webkit-scrollbar-thumb {
+    background: #cac8c8; 
+    border-radius: 10px;
+    border: 5px solid transparent!important;
+  }
+
+  /* width */
+  .container-section::-webkit-scrollbar {
+    height: 12px!important;
+  }
+
+  /* Track */
+  .container-section::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,.15);
+   margin:2px 15px!important;
+    border-radius: 4px;
+  }
+   
+  /* Handle */
+  .container-section::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 4px;
+  }
+/*********************************************top-header****************/
+header{
+    height: 11%;
+}
+
+.top-header{
+    background-color: rgba(0,0,0,.15);
+    padding: 5px 10px!important;
+    display: flex;
+}
+
+.div-wordBreak{
+    white-space: normal;
+    padding: 0px 40px!important;
+}
+
+.search-input{
+    background-color: hsla(0,0%,100%,0);
+    border-radius: 5px;
+    width: 95px;
+    height: 23px;
+    outline: none;
+}
+
+.search-button:hover,.search-input:hover{
+    background-color:#66a4c8;
+}
+
+.logo img{
+    width:64px;
+}
+
+.logo {
+    margin: 0px auto!important;
+}
+
+.icon{
+    height: 24px;
+    padding-top: 5px!important;
+}
+/*******************************************buttom-header********************/
+.buttom-header{
+    padding: 8px 10px!important;
+}
+
+.board-button{
+    background-color: hsla(0,0%,100%,.3);
+    padding: 0px 5px!important;
+}
+
+.board-list{
+    width: 354px;
+    margin-top: 5px!important;
+}
+
+.header-board-list{
+    font-size: 12px;
+    font-weight: bold;
+    color:#172b4d;
+}
+
+.sub-board-list{
+    font-size: 12px;
+    color:#959eae;
+}
+
+.free-button{
+    background: hsla(0,0%,100%,.2);
+    padding: 1px 6px!important;
+}
+
+.creat-link{
+    float: right;
+    text-decoration: auto;
+    border-bottom: 1px solid blue!important;
+    color: blue;
+}
+
+.button-send-invitation-block{
+    background-color: rgba(9,30,66,.04);
+    box-shadow: none;
+    border: none;
+    color: #a5adba;
+    cursor: not-allowed!important;
+    margin: 70px 8px 20px 8px!important;
+    width:95%;
+}
+
+.button-send-invitation-allowed{
+    background-color: green!important;
+    box-shadow: none;
+    border: none;
+    color: #a5adba;
+    cursor: pointer!important;
+    margin: 70px 8px 20px 8px!important;
+    width:95%;
+}
+
+.button-send-invitation-block:hover{
+    color: #a5adba;
+}
+
+.subject{
+    max-width:18px!important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/**************************************************list*****************/
+.container-section{
+    padding:8px 10px 8px 10px!important;
+    height: 88%!important;
+    width: 100%;
+    overflow: auto;
+}
+
+.add-list{
+    min-width: 272px;
+    max-width: 272px;
+}
+
+ .add-list-btn{
+    color:white;
+    background-color: hsla(0,0%,100%,.24);
+    text-align: left;
+    padding: 8px 0px 8px 10px!important;
+    outline-color: goldenrod!important
+ }
+ 
+ .add-list-input{
+    color:slategray;
+    text-align: left;
+    padding: 8px 0px 8px 10px!important;
+    outline-color:  goldenrod!important;
+ }
+
+ /***************************************************card********************/
+ .list{
+    background-color:#ebecf0;
+    min-width: 272px;
+    max-width: 272px;
+    float:left;
+    margin: 0px 5px!important;
+    height: fit-content;
+    max-height: 100%;
+    padding-right: 2px!important;
+ }
+
+ .list-title{
+    font-size: 20px;
+    padding:2px 0px 2px 10px!important; 
+    overflow-wrap: break-word;
+ }
+
+.list-title-p{
+    width: 88%;
+    float: left;
+ }
+
+.new-card{
+    text-align: left;
+    padding: 8px 0px 8px 10px!important;
+    outline-color: goldenrod!important;
+    background-color: #ebecf0;
+ }
+
+.card-li{
+    list-style-type: none;
+    padding: 8px 0px 8px 10px!important;
+    overflow-wrap: break-word;
+    box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+ }
+
+.card-li p{
+    display: inline-block!important;
+    width: 88%;
+ }
+
+.card-li:hover{
+    background-color:#d7e8ea7d!important;
+ }
+
+.card-li:hover .card-li-i {
+    display: inline-block!important;
+ }
+
+.card-li-i{
+    display: none!important;
+    padding: 5px 5px !important;
+    border-radius: 5px;
+ }
+
+.card-li-i:hover{
+    background-color:#b0e0e68f;
+ }
+/********************************dropdown-btn******************************/
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+ }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+ }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 19px;
+    top: -6px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+ }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+ }
+  
+.dropdown-content a:hover {
+      background-color: #f1f1f1;
+ }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+ }
+  
+.dropdown:hover .dropbtn {
+    background-color: lightgray;
+ }
+
+.dropdown-barIcon{
+      position:relative;
+ }
+
+.list-Actions{
+    text-align: center;
+    border-bottom: 1px solid lightgray!important;
+    margin: 0px 11px 0px 11px!important;
+    font-size: 13px;
+ }
+
+.dropdown-utility{
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    padding: 6px 12px!important;
+    text-decoration: none;
+    font-size: 12px;
+    width: 160px;
+ }
+
+.dropdown-cardIcon{
+    padding-left: 120px!important;
+    position: relative;
+    z-index: 500;
+ }
+
+.dropdown-card{
+    position: absolute;
+    left: 146px;
+    top: -60px;
+ }
+
+.bg-lightGreen{
+    background-color: #5aac44!important
+ }
+/********************************************overally-menu**************************************/
+#myNav{
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    padding: 10px!important;
+ }
+
+.overlay span{
+    color:white;
+ }
+
+.overlay li{
+    background: rgba(0,0,0,0.4);
+    border-radius: 3px;
+    clear: both;
+    color: #e6e6e6;
+    margin: 2px 2px!important;
+    display: block;
+    float: left;
+    padding: 9px 13px!important;
+ }
+
+.overlay li:hover{
+    margin-left: 10px!important;
+ }
+
+.close{
+    float: right;
+    font-size: 40px;
+ }
+
+.card-li{
+   width: 97%;
+ }
+
+.card-li-test{
+    display: inline-block!important;
+    margin-left: -4px!important;
+    width:270px;
+    padding: 23px 4px!important;
+ }
+
+.overlay-input-container{
+    display: flex;
+    flex-direction: column;
+ }
+
+.edit-card-BTN{
+    background-color: limegreen;
+    margin-top: 10px!important;
+    width: 72px;
+    padding: 3px 0px!important;
+    color: white;
+    font-size: 17px
+ }
+/************************************************sidepanel*********************/
+.sidePanel{
+    background-color: white;
+    position: fixed;
+    top: 34px;
+    right: 0px;
+    z-index: 9999;
+    transition: 1.5s;
+    width: 0px;
+}
+
+.slidePanel-header{
+    display: inline-block;
+    padding: 9px 0px 0px 129px!important;
+}
+
+.slidePanel-closeBTN{
+    font-size: 29px;
+    padding-right: 10px!important;
+    color: black!important;
+}
+.slidePanel-icon{
+    width: 15px;
+    margin: 0px 10px 6px 20px!important
+}
+
+.slidePanel-sub-discription{
+    padding-left: 49px!important;
+    color: gray;
+}
+
+.sidePanel input{
+    width: 15px;
+    height: 15px;
+    margin: 15px 10px 0px 20px!important;
+}
+/*************************************************media-screen****************/
+@media screen and (max-width: 387px) {
+    .search-input{
+        width: 52px;
+    }
+
+    .free-button , span{
+        display: none;
+    }
+
+  }
+
+  @media screen and (max-width: 732px) {
+    .btn{
+        height: 30px!important;
+    }
+
+    .board-button{
+        font-size: 10px;
+    }
+
+    i {
+        font-size: 7px;
+        padding: 0px 0px!important;
+    }
+
+    .list , .add-list-btn , .add-list-input {
+        min-width: 145px;
+        max-width: 145px;
+        font-size: 13px;
+    }
+
+    .dropdown-cardIcon {
+        padding-left: 27px!important;
+    }
+
+    .list-title-p p{
+        font-size: 14px;
+    }
+
+    .new-card{
+        font-size: 13px;
+    }
+
+    .fa-bars , .fa-credit-card{
+        font-size: 7px;
+    }
+
+    .dropdown-card {
+        position: absolute;
+        left: 41px;
+        top: -60px;
+     
+    }
+
+    .dropdown-utility {
+        font-size: 10px;
+        width: 135px;
+    }
+
+    .dropdown-content a {
+        font-size: 10px;
+        text-align: center;
+        padding: 0px!important;
+    }
+
+    .card-li p {
+        width: 86%;
+    }
+
+    .ul-overally li{
+        display: none;
+    }
+/***************************************************************/
+    .sub-board-list {
+        font-size: 10px;
+    }
+
+    .header-board-list {
+        font-size: 9px;
+    }
+
+    .board-list {
+        width: 300px;
+    }
+
+    .teamVisisble-ul{
+        inset: 0px auto auto -9px!important;
+        transform: translate3d(-103px, 30px, 0px);
+    }
+
+    .sidePanel{
+        font-size: 10px;
+    }
+
+    .test-70{
+        transform: translate3d(8px, -16px, 0px)!important;
+        width: 300px!important;
+        inset: 46px auto auto -189px!important;
+    }
+}
+
+  @media screen and (max-width: 806px) {
+    .free-button , .devider{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 890px) {
+    .subject {
+        max-width: 110px!important;
+        overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: 498px) {
+    .d-none-498px{
+     display: none;
+    }
+  }
+
+  @media screen and (max-width: 910px) {
+    .invite-ul{
+        inset: 0px auto auto -130px!important;
+        transform: translate3d(4px, 24px, 0px)!important;
+    }
+    }
+  
